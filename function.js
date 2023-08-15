@@ -18,3 +18,7 @@ function setValue(elemetid,newValue){
     const values=document.getElementById(elemetid)
      values.innerText =newValue;
 }
+function setsValue(elemetid){
+    const values=document.getElementById(elemetid)
+     values.innerText;
+}

@@ -22,11 +22,11 @@ document.getElementById("withdrew-btn").addEventListener("click",function(){
     const textwithdrew=getElementVById("withdrew")
   
     const newWithdrew=textwithdrew+inputwithdrew
-    setValue("withdrew",newWithdrew)
     const total=getElementVById("total")
     if(inputwithdrew>total){
         return alert("you dont have that mush money :(")
     }
+    setValue("withdrew",newWithdrew)
     const totalValue=total-newWithdrew
     setValue("total",totalValue)
 
