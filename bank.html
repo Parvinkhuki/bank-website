@@ -12,9 +12,12 @@
 </head>
 <body class="font-mono  mx-5 lg:mx-auto lg:max-w-screen-xl" >
     <header>
-        <h1 class="font-black text-center mt-28 text-5xl text-blue-900 lg:text-7xl">M0NEY COUNTER</h1>
+        <div class="flex justify-end">
+            <button class=" bg-blue-950 px-6 py-2  mb-40  rounded-xl lg:mt-11  text-white hover:bg-blue-100 hover:text-black"id="logout">LOGOUT</button>
+        </div>
+        <h1 class="font-black text-center mt-10 text-5xl text-blue-900 lg:text-7xl">M0NEY COUNTER</h1>
     </header>
-    <main>mail
+    <main>
         <section class="grid mt-6 md:mt-28 gap-6 lg:grid-cols-3">
             <div class="card-actions  text-white shadow-xl">
                 <div class="card-body bg-blue-800 items-center text-center ">
@@ -62,6 +65,7 @@
                     </div>
                   </div>
         </section>
+        
     </main>
     <script src="./function.js"></script>
     <script src="./bank.js"></script>

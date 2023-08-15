@@ -4,7 +4,8 @@ document.getElementById("deposit-btn").addEventListener("click",function(){
    
     const inputDeposit =getInputById("deposit1")
     const textdeposit=getElementVById("deposit")
-    if(inputDeposit==="string"){
+
+    if(isNaN(inputDeposit)){
         return alert("give only num")
     }
     const newDeposit=textdeposit+inputDeposit
@@ -20,6 +21,9 @@ document.getElementById("withdrew-btn").addEventListener("click",function(){
    
     const inputwithdrew =getInputById("withdrew1")
     const textwithdrew=getElementVById("withdrew")
+    if(isNaN(inputwithdrew)){
+        return alert("give only num")
+    }
   
     const newWithdrew=textwithdrew+inputwithdrew
     const total=getElementVById("total")
@@ -33,3 +37,15 @@ document.getElementById("withdrew-btn").addEventListener("click",function(){
 
  
 })
+const btn=document.getElementById("logout");
+
+
+btn.addEventListener("click", function sub(){
+    
+ 
+ window.location.href="index.html"
+
+
+}
+
+)
