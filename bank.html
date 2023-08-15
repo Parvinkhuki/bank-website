@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHUKI'S BANK page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+    </style>
+</head>
+<body class="font-mono  mx-5 lg:mx-auto lg:max-w-screen-xl" >
+    <header>
+        <h1 class="font-black text-center mt-28 text-5xl text-blue-900 lg:text-7xl">M0NEY COUNTER</h1>
+    </header>
+    <main>
+        <section class="grid mt-6 md:mt-28 gap-6 lg:grid-cols-3">
+            <div class="card-actions  text-white shadow-xl">
+                <div class="card-body bg-blue-800 items-center text-center ">
+                  <h2 class="card-title text-3xl lg:mt-11 lg:text-5xl ">DEPOSIT</h2>
+                  <p class="text-3xl lg:mb-11 lg:text-5xl">$<span id="deposit ">0</span></p>
+                </div>
+              </div>
+              <div class="card   text-white shadow-xl">
+            
+                <div class="card-body bg-blue-700 items-center text-center">
+                  <h2 class="card-title text-3xl lg:mt-11 lg:text-5xl">WITHDREW</h2>
+                  <p class="text-3xl lg:text-5xl" >$<span id="withdrew">0</span></p>
+                </div>
+              </div>
+              <div class="card text-white   shadow-xl">
+            
+                <div class="card-body bg-blue-950 items-center text-center">
+                  <h2 class="card-title text-3xl lg:mt-11 lg:text-5xl ">TOTAL AMOUNT</h2>
+                  <p class="text-3xl lg:text-5xl">$<span id="total">0</span></p>
+                </div>
+              </div>
+           
+        </section> 
+        <section>
+            <h1 class="font-black text-center mt-20 text-5xl text-blue-900 lg:text-5xl">DEPOSIT & WITHDREW</h1>
+            <section class="grid mt-6 md:mt-20 gap-6 lg:grid-cols-2 mb-11 ">
+                <div class="card   text-white shadow-xl">
+                    <div class="card-body bg-cyan-600 items-center text-center">
+                      <h2 class="card-title text-3xl lg:mt-11 lg:text-5xl lg:mb-4">DEPOSIT</h2>
+                      <input type="text"placeholder="deposit a ammount" class="text-xl lg:text-3xl text-black p-3 mb-11 w-3/4" id="deposit1">
+                    </div>
+                  </div>  <div class="card   text-white shadow-xl">
+            
+                    <div class="card-body bg-cyan-700 items-center text-center">
+                      <h2 class="card-title text-3xl lg:mt-11 lg:text-5xl lg:mb-4">WITHDREW</h2>
+                      <input type="text"placeholder="withdrew ammount" class="text-xl lg:text-3xl text-black p-3 mb-11 w-3/4" id="withdrew1">
+                    </div>
+                  </div>
+        </section>
+    </main>
+</body>
+</html>
